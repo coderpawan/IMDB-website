@@ -1,0 +1,91 @@
+@media only screen and (max-width:780px){
+  .watchlist{
+    display: none;
+  }
+  .logo img{
+    left:-94px;
+  }
+  .nav-list li {
+    position: relative;
+    left: -50px;
+  }
+  .box-main{
+    height: auto;
+    width: auto;
+  }
+  .firstHalf{
+      width: 44%; 
+      position: relative;
+      left: 34%;
+      top: 22px;
+  }
+  .text-big{
+    font-size: 32px;
+  }
+  .youtube{
+    display: block;
+     position: relative;
+     top: 350px;
+     left:-8%;
+  }
+  .vid3{
+    display: none;
+  }
+  .vid4{
+    display: none;
+  }
+  .video{
+    position: relative;
+    top: 229px;
+    left: -54px;
+  }
+  .firstSection{
+    height: 1100px;
+  }
+  #search{
+    position: relative;
+    left: -90%;
+  }
+  .copyRight p{
+    font-size: 17px;
+    position: relative;
+    left: 6%;
+  }
+   .contact{
+     height: 1000px;
+   }
+   .contactinfo{
+    position: relative;
+    top: -275px;
+    left: 310px;
+    width:108%;
+   }
+   .contactForm{
+     margin: 0px 0px;
+     padding:0px 0px;
+     height: 560px;
+    position: relative;
+    left: 260px;
+    width: 147%;
+    top: 49px;
+   }
+   .w50 span{
+    position: relative;
+    left: 53px;
+    top: -20px;
+   }
+   .w50 input{
+    margin: 7px 139px;
+    padding: 3px 3px;
+    position: relative;
+    left: -87px;
+   }
+   .w150{
+    position: relative;
+    left: -60px;
+   }
+   .Sign{
+     display: none;
+   }
+   
+  }

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="IMDB.css">
+    <link rel="stylesheet" href="IMDBresponsive.css">
+
+    <title>IMDB Website of Pawan</title>
+</head>
+
+<body>
+    <nav class="navbar h-nav-resp" style="background-color: black;">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="imdb logo.png" alt="logo" height="50" width="50"></div>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Movies">Movies & TV Shows</a></li>
+
+            <li><a href="#Sign&Contact">Contact Us</a></li>
+        </ul>
+        <div class="watchlist">
+            <img src="bookmark.png" alt="bookmark" height="35" width="35">
+            <div class="watch">Watchlist</div>
+        </div>
+        
+    </nav>
+    <section class="background firstSection" id="Home">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">WELCOME TO PAWAN'S WORLD OF MOVIES</p>
+                <p class="text-small">Here you get the ratings,trailors and even the link of all the movies.<br>
+                    You get an ordered list of the movies according to the blockbuster level. </p>
+                <div class="buttons">
+                    <p>Sign Up at the bottom to enjoy our Premium to the fullest</p>
+                    <button class="Sign"><a href="#Sign&Contact">Sign Up</a></button>
+
+                </div>
+            </div>
+
+            <div class="youtube">
+                <div class="video vid1">
+                    <iframe width="250" height="200" src="https://www.youtube.com/embed/_rThMKi5T30"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video vid2">
+                    <iframe width="250" height="200" src="https://www.youtube.com/embed/wwE93b5kC3Y"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video vid3">
+                    <iframe width="250" height="200" src="https://www.youtube.com/embed/OekjrYdsZXo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video vid4">
+                    <iframe width="250" height="200" src="https://www.youtube.com/embed/90NBJRiEXW0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
+            </div>
+    </section>
+    <section class="AllMovies" id="Movies">
+        <header>
+            <form id="form">
+                <input type="text" placeholder="Search Your Desired Movie" id="search" class="search">
+            </form>
+        </header>
+        <div id="tags"></div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content" id="overlay-content"></div>
+        </div>
+        <main id="main"></main>
+    </section>
+    <section class="contact" id="Sign&Contact">
+        <div class="container">
+            <div class="contactinfo">
+                <div>
+                    <h2 style="padding: 25px 68px;">Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <div><img src="AddressIcon.png" alt="adress image"></div>
+                            <div class="address"><a
+                                    href="https://www.google.com/maps/place/middle+School+Ratan/@25.5946061,86.2555058,19.34z/data=!4m5!3m4!1s0x39f20133bdcab63f:0x92b3cdfb79fc047!8m2!3d25.5946285!4d86.2559178"
+                                    targrt="_blank">Ratan,Bakhri(Ps)<br>Begusarai(dist),Bihar<br>Pin code:- 848201</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div><img src="email icon.png" alt="email image"></div>
+                            <div class="email"><a href="sahupawan9749568594@gmail.com"
+                                    target="_blank">sahupawan9749568594@gmail.com</a></div>
+                        </li>
+                        <li>
+                            <div><img src="call icon.png" alt="call image" style="border-radius: 1000px;"></div>
+                            <div class="call"><a href="tel:+919749568594" targrt="_blank">9749568594</a></div>
+                        </li>
+                    </ul>
+                    <ul class="socialLink">
+                        <li><a href="https://www.facebook.com/pawankumar.sahu.7127146/" targrt="_blank"><img
+                                    src="facebook.png" alt="facebook img" style="border-radius: 16px;"></a></li>
+                        <li><a href="https://twitter.com/PawanKu82219048" targrt="_blank"><img src="twitter.png"
+                                    alt="twitter img"></a></li>
+                        <li><a href=" https://www.instagram.com/pawan_kumar_9749/" target="_blank"><img src="insta.png"
+                                    alt="instagram img" style="border-radius: 18px;"></a></li>
+                        <li><a href="https://www.linkedin.com/in/pawan-kumar-sahu-4-year-b-tech-civil-engineering-4329a2208/"
+                                targrt="_blank"><img src="linkedin.png" alt="linkedin img"
+                                    style="border-radius: 19px;"></a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="contactForm">
+                <h2 style="margin: 31px 0px; display: flex; position: relative; left: 145px;">Sign Up Here</h2>
+                <form class="formBox" id="SignContact">
+                    <div class="inputBox w50">
+                        <span>First Name :- </span><br>
+                        <input id="first" type="text" placeholder="Enter your first name" name="first" required>
+                    </div>
+                    <div class="inputBox w50">
+                        <span>Last Name :- </span><br>
+                        <input id="last" type="text" placeholder="Enter your second name" name="last" required>
+                    </div>
+                    <div class="inputBox w50">
+                        <span>Email Address :- </span><br>
+                        <input id="email" type="text" placeholder="Enter your email address" name="email" required>
+                    </div>
+                    <div class="inputBox w50">
+                        <span>Mobile Number :- </span><br>
+                        <input id="mobile" type="text" placeholder="Enter your mobile number" name="mobile" required>
+                    </div>
+                    <div class="inputBox w50">
+                        <span>Create Password :- </span><br>
+                        <input id="Npassword" type="text" placeholder="Enter your New Password" name="password"
+                            required>
+                    </div>
+                    <div class="inputBox w50">
+                        <span>Confirm Password :- </span><br>
+                        <input id="Cpassword" type="text" placeholder="Enter your Created Password" name="password"
+                            required>
+                    </div>
+
+                    <div class="inputBox w150">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="copyRight">
+        <p>
+            Copyright@2021-www.PawanIMDB.com-All rights reserved
+        </p>
+    </section>
+    <script src="IMDB.js"></script>
+</body>
